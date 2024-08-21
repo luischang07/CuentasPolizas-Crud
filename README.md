@@ -3,7 +3,9 @@ Suponga que Ud. le han propuesto que desarrolle una aplicación móvil que permi
 La empresa “Exacta” utiliza un catálogo de cuentas a 6 dígitos, donde:
 
 •	Los dos primero representa la cuenta.
+
 •	Los dos siguiente la sub cuenta.
+
 •	Los dos siguiente la sub sub cuenta.
 
 Ejemplos:
