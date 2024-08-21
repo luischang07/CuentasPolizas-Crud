@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:scrollbarStyle="outsideInset"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientelogo"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnCuentas"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton"
+            android:backgroundTint="@color/white"
+            android:text="Cuentas"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnRegistroPolizas"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            app:layout_constraintVertical_bias="0.25"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="321dp"
+            android:layout_height="307dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13"
+            app:srcCompat="@drawable/tw" />
+
+        <Button
+            android:id="@+id/btnRegistroPolizas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/boton"
+            android:backgroundTint="@color/white"
+            android:text="Registro Polizas"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/btnConsultas"
+            app:layout_constraintEnd_toEndOf="@+id/btnCuentas"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/btnCuentas"
+            app:layout_constraintTop_toBottomOf="@+id/btnCuentas" />
+
+        <Button
+            android:id="@+id/btnConsultas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/boton"
+            android:backgroundTint="@color/white"
+            android:text="Consultas"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnCuentas"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/btnCuentas"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegistroPolizas"
+            app:layout_constraintVertical_bias="0.01999998" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

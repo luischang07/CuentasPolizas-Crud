@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PolizaView">
+
+    <TextView
+        android:id="@+id/Poliza"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Poliza: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/Poliza2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Consulta" />
+
+    <TextView
+        android:id="@+id/Poliza2"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Poliza"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/Poliza"
+        app:layout_constraintEnd_toStartOf="@+id/Fecha"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Poliza"
+        app:layout_constraintTop_toTopOf="@+id/Poliza" />
+
+    <TextView
+        android:id="@+id/Fecha2"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Poliza"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/Fecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Fecha"
+        app:layout_constraintTop_toTopOf="@+id/Fecha" />
+
+    <TextView
+        android:id="@+id/Fecha"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Fecha: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Poliza2"
+        app:layout_constraintEnd_toStartOf="@+id/Fecha2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Poliza2"
+        app:layout_constraintTop_toTopOf="@+id/Poliza2" />
+
+    <TextView
+        android:id="@+id/TIPOMOV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TIPOMOV"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/IMPORTE"
+        app:layout_constraintEnd_toStartOf="@+id/TIPOMOV2"
+        app:layout_constraintStart_toStartOf="@+id/Cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/Cuenta" />
+
+    <TextView
+        android:id="@+id/IMPORTE2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="15dp"
+        android:text="IMPORTE"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/IMPORTE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IMPORTE"
+        app:layout_constraintTop_toTopOf="@+id/IMPORTE" />
+
+    <TextView
+        android:id="@+id/IMPORTE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="IMPORTE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/IMPORTE2"
+        app:layout_constraintStart_toStartOf="@+id/Cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/TIPOMOV" />
+
+    <TextView
+        android:id="@+id/TIPOMOV2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:text="TIPOMOV"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TIPOMOV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TIPOMOV"
+        app:layout_constraintTop_toTopOf="@+id/TIPOMOV"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/Cuenta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cuenta"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TIPOMOV"
+        app:layout_constraintEnd_toStartOf="@+id/cuenta"
+        app:layout_constraintStart_toStartOf="@+id/Poliza"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/cuenta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="15dp"
+        android:text="Cuenta"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Cuenta"
+        app:layout_constraintTop_toTopOf="@+id/Cuenta"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/Consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONSULTA"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="271dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
